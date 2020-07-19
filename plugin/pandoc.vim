@@ -8,7 +8,9 @@ set cpoptions&vim
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 
 command! PandocCurrentFileToHTML lua require'pandoc'.pandoc("html")
-
+command! PandocCurrentFileToPDF lua require'pandoc'.pandoc("pdf")
+command! PandocCurrentFileToRST lua require'pandoc'.pandoc("rst")
+command! PandocCurrentFileToMD lua require'pandoc'.pandoc("markdown")
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 
